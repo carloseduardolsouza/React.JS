@@ -1,0 +1,42 @@
+.card {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: white;
+    margin-top: 20px;
+    position: relative;
+}
+
+.card:hover {
+    transform: scale(102%);
+    transition: .5s;
+}
+
+.content_card {
+    border-top: solid #333;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 15px;
+ color: #000000a1;
+}
+
+.add_cart {
+    display: none;
+    position: absolute;
+    right: 3px;
+    background: none;
+    color: #4444ff;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.card:hover .add_cart {
+    display: block;
+}

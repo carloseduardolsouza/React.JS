@@ -1,0 +1,16 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.glob {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #ebebeb;
+}
