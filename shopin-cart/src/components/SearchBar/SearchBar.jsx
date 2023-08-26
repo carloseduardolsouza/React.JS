@@ -1,11 +1,24 @@
 import "./SearchBar.css"
-import React , { useState } from "react"
+import React , { useContext, useState } from "react"
 import { FcSearch } from "react-icons/fc"
+import fetchProducts from "../../api/fetchProducts"
+import AppContext from "../../context/AppConstext"
 
 function SearchBar() {
+    const {setProduts , setloading} = useContext(AppContext)
     const [search , setSearch] = useState("")
+
+    const renderSearch = async (event) => {
+        event.preventDefault()
+        setloading(true)
+        const produtos = await fetchProducts(search)
+        setloading(false)
+        setSearch("")
+        setProduts(produtos)
+    }
+
     return (
-        <form>
+        <form onSubmit={renderSearch}>
             <input type="search"
             value={search}
             placeholder="Buscar Produtos"
