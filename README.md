@@ -73,5 +73,5 @@
         </ul>
     </div>
     
-    <img src="imagens-readme/ling-javascripty.png" alt="logohtml">
+    <img src="imagnes/logo-react.png" alt="logo-react">
 </main>
