@@ -5,7 +5,7 @@ function CartButton() {
     return ( 
         <button className="cart">
             <AiOutlineShoppingCart />
-            <span>10</span>
+            <span>1</span>
         </button>
      );
 }
